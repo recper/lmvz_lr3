@@ -12,9 +12,11 @@ namespace CreateIkebana
 {
     public partial class Flowers : Form
     {
+        private int quantatyOfChekedFlovers;
         public Flowers()
         {
             InitializeComponent();
+            quantatyOfChekedFlovers = 0;
         }
 
         public bool CheckOne()
@@ -417,6 +419,38 @@ namespace CreateIkebana
             ((Form1)this.Owner).mlb2.Visible = false;
             ((Form1)this.Owner).mbtn3.Visible = false;
             ((Form1)this.Owner).mlb3.Visible = false;
+        }
+
+        private void fbtn8_Click_1(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;
+            if (button.FlatAppearance.BorderSize == 0)
+            {
+                if (quantatyOfChekedFlovers < 3)
+                {
+                    button.FlatAppearance.BorderSize = 2;
+                    quantatyOfChekedFlovers++;
+                }
+                else
+                {
+                    infoLabel.ForeColor = Color.Red;
+                    infoLabel.Font = new Font(infoLabel.Font.FontFamily, 13);
+                }
+            }
+            else 
+            {
+                if (quantatyOfChekedFlovers > 0)
+                {
+                    button.FlatAppearance.BorderSize = 0;
+                    quantatyOfChekedFlovers--;
+                    infoLabel.ForeColor = Color.Black;
+                    infoLabel.Font = new Font(infoLabel.Font.FontFamily, 10);
+                }
+                else
+                { 
+                    //TODO
+                }
+            }
         }
 
 
