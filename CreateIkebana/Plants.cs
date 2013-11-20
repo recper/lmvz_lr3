@@ -12,6 +12,7 @@ namespace CreateIkebana
 {
     public partial class Plants : Form
     {
+        private int quantatyOfChekedPlants;
         public Plants()
         {
             InitializeComponent();
@@ -418,6 +419,37 @@ namespace CreateIkebana
             ((Form1)this.Owner).mlb5.Visible = false;
             ((Form1)this.Owner).mbtn6.Visible = false;
             ((Form1)this.Owner).mlb6.Visible = false;
+        }
+
+        private void colorChanger_Click(object sender, EventArgs e) {
+            Button button = (Button)sender;
+            if (button.FlatAppearance.BorderSize == 0)
+            {
+                if (quantatyOfChekedPlants < 3)
+                {
+                    button.FlatAppearance.BorderSize = 2;
+                    quantatyOfChekedPlants++;
+                }
+                else
+                {
+                    infoLabel.ForeColor = Color.Red;
+                    infoLabel.Font = new Font(infoLabel.Font.FontFamily, 13);
+                }
+            }
+            else
+            {
+                if (quantatyOfChekedPlants > 0)
+                {
+                    button.FlatAppearance.BorderSize = 0;
+                    quantatyOfChekedPlants--;
+                    infoLabel.ForeColor = Color.Black;
+                    infoLabel.Font = new Font(infoLabel.Font.FontFamily, 10);
+                }
+                else
+                {
+                    //TODO
+                }
+            }   
         }
     }
 }

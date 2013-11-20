@@ -70,6 +70,7 @@
             this.fbtn1.TabIndex = 0;
             this.fbtn1.UseVisualStyleBackColor = true;
             this.fbtn1.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn1.Click += new System.EventHandler(this.fbtn1_Click);
             // 
             // fbtn5
             // 
@@ -83,6 +84,7 @@
             this.fbtn5.TabIndex = 1;
             this.fbtn5.UseVisualStyleBackColor = true;
             this.fbtn5.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn5.Click += new System.EventHandler(this.fbtn5_Click);
             // 
             // fbtn7
             // 
@@ -96,6 +98,7 @@
             this.fbtn7.TabIndex = 2;
             this.fbtn7.UseVisualStyleBackColor = true;
             this.fbtn7.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn7.Click += new System.EventHandler(this.fbtn7_Click);
             // 
             // fbtn9
             // 
@@ -109,6 +112,7 @@
             this.fbtn9.TabIndex = 3;
             this.fbtn9.UseVisualStyleBackColor = true;
             this.fbtn9.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn9.Click += new System.EventHandler(this.fbtn9_Click);
             // 
             // fbtn3
             // 
@@ -122,6 +126,7 @@
             this.fbtn3.TabIndex = 4;
             this.fbtn3.UseVisualStyleBackColor = true;
             this.fbtn3.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn3.Click += new System.EventHandler(this.fbtn3_Click);
             // 
             // fbtn2
             // 
@@ -135,6 +140,7 @@
             this.fbtn2.TabIndex = 5;
             this.fbtn2.UseVisualStyleBackColor = true;
             this.fbtn2.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn2.Click += new System.EventHandler(this.fbtn2_Click);
             // 
             // fbtn6
             // 
@@ -148,6 +154,7 @@
             this.fbtn6.TabIndex = 6;
             this.fbtn6.UseVisualStyleBackColor = true;
             this.fbtn6.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn6.Click += new System.EventHandler(this.fbtn6_Click);
             // 
             // fbtn10
             // 
@@ -161,6 +168,7 @@
             this.fbtn10.TabIndex = 7;
             this.fbtn10.UseVisualStyleBackColor = true;
             this.fbtn10.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn10.Click += new System.EventHandler(this.fbtn10_Click);
             // 
             // fbtn12
             // 
@@ -174,6 +182,8 @@
             this.fbtn12.TabIndex = 11;
             this.fbtn12.UseVisualStyleBackColor = true;
             this.fbtn12.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn12.Click += new System.EventHandler(this.fbtn12_Click);
+
             // 
             // fbtn8
             // 
@@ -187,6 +197,7 @@
             this.fbtn8.TabIndex = 10;
             this.fbtn8.UseVisualStyleBackColor = true;
             this.fbtn8.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn8.Click += new System.EventHandler(this.fbtn8_Click);
             // 
             // fbtn4
             // 
@@ -200,6 +211,7 @@
             this.fbtn4.TabIndex = 9;
             this.fbtn4.UseVisualStyleBackColor = true;
             this.fbtn4.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn4.Click += new System.EventHandler(this.fbtn4_Click);
             // 
             // fbtn11
             // 
@@ -213,6 +225,7 @@
             this.fbtn11.TabIndex = 16;
             this.fbtn11.UseVisualStyleBackColor = true;
             this.fbtn11.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn11.Click += new System.EventHandler(this.fbtn11_Click);
             // 
             // btnOK
             // 
