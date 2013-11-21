@@ -60,12 +60,12 @@
             this.mbtn = new System.Windows.Forms.Button();
             this.mbtnBaskets = new System.Windows.Forms.Button();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.mbtn7 = new System.Windows.Forms.Button();
             this.mbtn8 = new System.Windows.Forms.Button();
             this.mbtn9 = new System.Windows.Forms.Button();
             this.mlb7 = new System.Windows.Forms.Label();
             this.mlb8 = new System.Windows.Forms.Label();
             this.mlb9 = new System.Windows.Forms.Label();
+            this.mbtn7 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -161,7 +161,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.00662F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.99338F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 79F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
             this.tableLayoutPanel1.Controls.Add(this.mlb1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.mbtn1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.mbtn2, 1, 0);
@@ -199,14 +199,14 @@
             // 
             this.mbtn2.Location = new System.Drawing.Point(82, 3);
             this.mbtn2.Name = "mbtn2";
-            this.mbtn2.Size = new System.Drawing.Size(77, 67);
+            this.mbtn2.Size = new System.Drawing.Size(76, 67);
             this.mbtn2.TabIndex = 2;
             this.mbtn2.UseVisualStyleBackColor = true;
             this.mbtn2.Visible = false;
             // 
             // mbtn3
             // 
-            this.mbtn3.Location = new System.Drawing.Point(165, 3);
+            this.mbtn3.Location = new System.Drawing.Point(164, 3);
             this.mbtn3.Name = "mbtn3";
             this.mbtn3.Size = new System.Drawing.Size(73, 67);
             this.mbtn3.TabIndex = 3;
@@ -216,7 +216,7 @@
             // mlb3
             // 
             this.mlb3.AutoSize = true;
-            this.mlb3.Location = new System.Drawing.Point(165, 73);
+            this.mlb3.Location = new System.Drawing.Point(164, 73);
             this.mlb3.Name = "mlb3";
             this.mlb3.Size = new System.Drawing.Size(0, 13);
             this.mlb3.TabIndex = 5;
@@ -228,7 +228,7 @@
             this.mlb2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mlb2.Location = new System.Drawing.Point(82, 73);
             this.mlb2.Name = "mlb2";
-            this.mlb2.Size = new System.Drawing.Size(77, 27);
+            this.mlb2.Size = new System.Drawing.Size(76, 27);
             this.mlb2.TabIndex = 4;
             this.mlb2.Visible = false;
             // 
@@ -247,7 +247,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.14815F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.85185F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78F));
             this.tableLayoutPanel2.Controls.Add(this.mbtn4, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.mbtn5, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.mbtn6, 2, 0);
@@ -266,14 +266,14 @@
             // 
             this.mbtn4.Location = new System.Drawing.Point(3, 3);
             this.mbtn4.Name = "mbtn4";
-            this.mbtn4.Size = new System.Drawing.Size(72, 65);
+            this.mbtn4.Size = new System.Drawing.Size(71, 65);
             this.mbtn4.TabIndex = 0;
             this.mbtn4.UseVisualStyleBackColor = true;
             this.mbtn4.Visible = false;
             // 
             // mbtn5
             // 
-            this.mbtn5.Location = new System.Drawing.Point(81, 3);
+            this.mbtn5.Location = new System.Drawing.Point(80, 3);
             this.mbtn5.Name = "mbtn5";
             this.mbtn5.Size = new System.Drawing.Size(77, 65);
             this.mbtn5.TabIndex = 1;
@@ -282,7 +282,7 @@
             // 
             // mbtn6
             // 
-            this.mbtn6.Location = new System.Drawing.Point(164, 3);
+            this.mbtn6.Location = new System.Drawing.Point(163, 3);
             this.mbtn6.Name = "mbtn6";
             this.mbtn6.Size = new System.Drawing.Size(71, 65);
             this.mbtn6.TabIndex = 2;
@@ -292,7 +292,7 @@
             // mlb5
             // 
             this.mlb5.AutoSize = true;
-            this.mlb5.Location = new System.Drawing.Point(81, 71);
+            this.mlb5.Location = new System.Drawing.Point(80, 71);
             this.mlb5.Name = "mlb5";
             this.mlb5.Size = new System.Drawing.Size(0, 13);
             this.mlb5.TabIndex = 4;
@@ -301,7 +301,7 @@
             // mlb6
             // 
             this.mlb6.AutoSize = true;
-            this.mlb6.Location = new System.Drawing.Point(164, 71);
+            this.mlb6.Location = new System.Drawing.Point(163, 71);
             this.mlb6.Name = "mlb6";
             this.mlb6.Size = new System.Drawing.Size(0, 13);
             this.mlb6.TabIndex = 5;
@@ -369,7 +369,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.14815F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.85185F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 77F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78F));
             this.tableLayoutPanel3.Controls.Add(this.mbtn8, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.mbtn9, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.mlb7, 1, 1);
@@ -384,18 +384,9 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(239, 104);
             this.tableLayoutPanel3.TabIndex = 10;
             // 
-            // mbtn7
-            // 
-            this.mbtn7.Location = new System.Drawing.Point(3, 3);
-            this.mbtn7.Name = "mbtn7";
-            this.mbtn7.Size = new System.Drawing.Size(72, 65);
-            this.mbtn7.TabIndex = 0;
-            this.mbtn7.UseVisualStyleBackColor = true;
-            this.mbtn7.Visible = false;
-            // 
             // mbtn8
             // 
-            this.mbtn8.Location = new System.Drawing.Point(81, 3);
+            this.mbtn8.Location = new System.Drawing.Point(80, 3);
             this.mbtn8.Name = "mbtn8";
             this.mbtn8.Size = new System.Drawing.Size(77, 65);
             this.mbtn8.TabIndex = 1;
@@ -404,7 +395,7 @@
             // 
             // mbtn9
             // 
-            this.mbtn9.Location = new System.Drawing.Point(164, 3);
+            this.mbtn9.Location = new System.Drawing.Point(163, 3);
             this.mbtn9.Name = "mbtn9";
             this.mbtn9.Size = new System.Drawing.Size(71, 65);
             this.mbtn9.TabIndex = 2;
@@ -414,7 +405,7 @@
             // mlb7
             // 
             this.mlb7.AutoSize = true;
-            this.mlb7.Location = new System.Drawing.Point(81, 71);
+            this.mlb7.Location = new System.Drawing.Point(80, 71);
             this.mlb7.Name = "mlb7";
             this.mlb7.Size = new System.Drawing.Size(0, 13);
             this.mlb7.TabIndex = 4;
@@ -423,7 +414,7 @@
             // mlb8
             // 
             this.mlb8.AutoSize = true;
-            this.mlb8.Location = new System.Drawing.Point(164, 71);
+            this.mlb8.Location = new System.Drawing.Point(163, 71);
             this.mlb8.Name = "mlb8";
             this.mlb8.Size = new System.Drawing.Size(0, 13);
             this.mlb8.TabIndex = 5;
@@ -437,6 +428,15 @@
             this.mlb9.Size = new System.Drawing.Size(0, 13);
             this.mlb9.TabIndex = 3;
             this.mlb9.Visible = false;
+            // 
+            // mbtn7
+            // 
+            this.mbtn7.Location = new System.Drawing.Point(3, 3);
+            this.mbtn7.Name = "mbtn7";
+            this.mbtn7.Size = new System.Drawing.Size(71, 65);
+            this.mbtn7.TabIndex = 0;
+            this.mbtn7.UseVisualStyleBackColor = true;
+            this.mbtn7.Visible = false;
             // 
             // Form1
             // 

@@ -413,6 +413,17 @@ namespace CreateIkebana
 
         private void pbtnNo_Click(object sender, EventArgs e)
         {
+            quantatyOfChekedPlants = 0;
+            infoLabel.ForeColor = Color.Black;
+            infoLabel.Font = new Font(infoLabel.Font.FontFamily, 10);
+            foreach (Control x in this.Controls)
+            {
+                try
+                {
+                    ((Button)x).FlatAppearance.BorderSize = 0;
+                }
+                catch { }
+            }
             ((Form1)this.Owner).mbtn4.Visible = false;
             ((Form1)this.Owner).mlb4.Visible = false;
             ((Form1)this.Owner).mbtn5.Visible = false;
