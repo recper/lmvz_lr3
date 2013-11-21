@@ -21,6 +21,7 @@ namespace CreateIkebana
             AddOwnedForm(flo);
             AddOwnedForm(plants);
             AddOwnedForm(ikebanas);
+            AddOwnedForm(baskets);
             InitializeComponent();
         }
 
