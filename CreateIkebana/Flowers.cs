@@ -17,6 +17,18 @@ namespace CreateIkebana
         {
             InitializeComponent();
             quantatyOfChekedFlovers = 0;
+            this.fbtn11.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn12.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn8.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn4.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn10.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn6.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn2.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn3.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn9.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn7.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn5.Click += new System.EventHandler(this.fbtn8_Click_1);
+            this.fbtn1.Click += new System.EventHandler(this.fbtn8_Click_1);
         }
 
         public bool CheckOne()
