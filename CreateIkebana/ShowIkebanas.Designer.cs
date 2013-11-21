@@ -40,9 +40,9 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(241, 313);
+            this.btnOK.Location = new System.Drawing.Point(408, 307);
             this.btnOK.Name = "btnOK";
-            this.btnOK.Size = new System.Drawing.Size(126, 39);
+            this.btnOK.Size = new System.Drawing.Size(100, 37);
             this.btnOK.TabIndex = 46;
             this.btnOK.Text = "Exit";
             this.btnOK.UseVisualStyleBackColor = true;
@@ -50,7 +50,7 @@
             // ikebbtn1
             // 
             this.ikebbtn1.Image = ((System.Drawing.Image)(resources.GetObject("ikebbtn1.Image")));
-            this.ikebbtn1.Location = new System.Drawing.Point(70, 24);
+            this.ikebbtn1.Location = new System.Drawing.Point(167, 26);
             this.ikebbtn1.Name = "ikebbtn1";
             this.ikebbtn1.Size = new System.Drawing.Size(297, 258);
             this.ikebbtn1.TabIndex = 48;
@@ -59,7 +59,7 @@
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(1, 24);
+            this.button1.Location = new System.Drawing.Point(62, 26);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(63, 60);
             this.button1.TabIndex = 51;
@@ -69,7 +69,7 @@
             // button2
             // 
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(4, 90);
+            this.button2.Location = new System.Drawing.Point(65, 92);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(60, 57);
             this.button2.TabIndex = 52;
@@ -79,7 +79,7 @@
             // button3
             // 
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(4, 153);
+            this.button3.Location = new System.Drawing.Point(65, 155);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(60, 64);
             this.button3.TabIndex = 53;
@@ -89,7 +89,7 @@
             // button4
             // 
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(4, 224);
+            this.button4.Location = new System.Drawing.Point(65, 226);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(60, 58);
             this.button4.TabIndex = 54;
@@ -100,7 +100,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(423, 383);
+            this.ClientSize = new System.Drawing.Size(518, 355);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
