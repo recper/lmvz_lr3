@@ -217,20 +217,24 @@
             // btnOK
             // 
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnOK.Image = ((System.Drawing.Image)(resources.GetObject("btnOK.Image")));
             this.btnOK.Location = new System.Drawing.Point(360, 332);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(100, 37);
             this.btnOK.TabIndex = 20;
             this.btnOK.Text = "OK";
+            this.btnOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnOK.UseVisualStyleBackColor = true;
             // 
             // btnNo
             // 
+            this.btnNo.Image = ((System.Drawing.Image)(resources.GetObject("btnNo.Image")));
             this.btnNo.Location = new System.Drawing.Point(470, 332);
             this.btnNo.Name = "btnNo";
             this.btnNo.Size = new System.Drawing.Size(100, 37);
             this.btnNo.TabIndex = 21;
             this.btnNo.Text = "Restart";
+            this.btnNo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNo.UseVisualStyleBackColor = true;
             this.btnNo.Click += new System.EventHandler(this.btnNo_Click);
             // 

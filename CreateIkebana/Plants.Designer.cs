@@ -168,22 +168,26 @@
             // 
             // pbtnNo
             // 
+            this.pbtnNo.Image = ((System.Drawing.Image)(resources.GetObject("pbtnNo.Image")));
             this.pbtnNo.Location = new System.Drawing.Point(471, 334);
             this.pbtnNo.Name = "pbtnNo";
             this.pbtnNo.Size = new System.Drawing.Size(100, 37);
             this.pbtnNo.TabIndex = 47;
             this.pbtnNo.Text = "Restart";
+            this.pbtnNo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.pbtnNo.UseVisualStyleBackColor = true;
             this.pbtnNo.Click += new System.EventHandler(this.pbtnNo_Click);
             // 
             // pbtnOK
             // 
             this.pbtnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.pbtnOK.Image = ((System.Drawing.Image)(resources.GetObject("pbtnOK.Image")));
             this.pbtnOK.Location = new System.Drawing.Point(361, 334);
             this.pbtnOK.Name = "pbtnOK";
             this.pbtnOK.Size = new System.Drawing.Size(100, 37);
             this.pbtnOK.TabIndex = 46;
             this.pbtnOK.Text = "OK";
+            this.pbtnOK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.pbtnOK.UseVisualStyleBackColor = true;
             // 
             // pbtn11
