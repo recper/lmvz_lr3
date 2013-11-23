@@ -81,6 +81,13 @@ namespace CreateIkebana
         private void mbtnBaskets_Click(object sender, EventArgs e)
         {
             baskets.ShowDialog();
-        }      
+        }
+
+        private void aboutPrToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+    //        helpProvider1.SetHelpString(Control F1, string 
+        }
+
+   
     }
 }
