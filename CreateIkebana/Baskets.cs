@@ -416,7 +416,7 @@ namespace CreateIkebana
             }
         }
 
-        private void btnNo_Click(object sender, EventArgs e)
+        internal void btnNo_Click(object sender, EventArgs e)
         {
             quantatyOfChekedBaskets = 0;
             infoLabel.ForeColor = Color.Black;

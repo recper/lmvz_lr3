@@ -12,7 +12,7 @@ namespace CreateIkebana
 {
     public partial class Flowers : Form
     {
-        private int quantatyOfChekedFlovers;
+        public int quantatyOfChekedFlovers;
         public Flowers()
         {
             InitializeComponent();
@@ -423,7 +423,7 @@ namespace CreateIkebana
         }
 
 
-        private void btnNo_Click(object sender, EventArgs e)
+        internal void btnNo_Click(object sender, EventArgs e)
         {
             quantatyOfChekedFlovers = 0;
             infoLabel.ForeColor = Color.Black;

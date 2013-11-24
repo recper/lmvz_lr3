@@ -13,9 +13,22 @@ namespace CreateIkebana
     public partial class Plants : Form
     {
         private int quantatyOfChekedPlants;
+
         public Plants()
         {
             InitializeComponent();
+            this.pbtn11.Click += new System.EventHandler(this.color_Click);
+            this.pbtn12.Click += new System.EventHandler(this.color_Click);
+            this.pbtn8.Click += new System.EventHandler(this.color_Click);
+            this.pbtn4.Click += new System.EventHandler(this.color_Click);
+            this.pbtn10.Click += new System.EventHandler(this.color_Click);
+            this.pbtn6.Click += new System.EventHandler(this.color_Click);
+            this.pbtn2.Click += new System.EventHandler(this.color_Click);
+            this.pbtn3.Click += new System.EventHandler(this.color_Click);
+            this.pbtn9.Click += new System.EventHandler(this.color_Click);
+            this.pbtn7.Click += new System.EventHandler(this.color_Click);
+            this.pbtn5.Click += new System.EventHandler(this.color_Click);
+            this.pbtn1.Click += new System.EventHandler(this.color_Click);
         }
 
         public bool CheckOne()
@@ -411,7 +424,7 @@ namespace CreateIkebana
             }
         }
 
-        private void pbtnNo_Click(object sender, EventArgs e)
+        internal void pbtnNo_Click(object sender, EventArgs e)
         {
             quantatyOfChekedPlants = 0;
             infoLabel.ForeColor = Color.Black;
@@ -432,35 +445,36 @@ namespace CreateIkebana
             ((Form1)this.Owner).mlb6.Visible = false;
         }
 
-        private void colorChanger_Click(object sender, EventArgs e) {
-            Button button = (Button)sender;
-            if (button.FlatAppearance.BorderSize == 0)
-            {
-                if (quantatyOfChekedPlants < 3)
+        private void color_Click(object sender, EventArgs e)
+        {
+                Button button = (Button)sender;
+                if (button.FlatAppearance.BorderSize == 0)
                 {
-                    button.FlatAppearance.BorderSize = 2;
-                    quantatyOfChekedPlants++;
+                    if (quantatyOfChekedPlants < 3)
+                    {
+                        button.FlatAppearance.BorderSize = 2;
+                        quantatyOfChekedPlants++;
+                    }
+                    else
+                    {
+                        infoLabel.ForeColor = Color.Red;
+                        infoLabel.Font = new Font(infoLabel.Font.FontFamily, 13);
+                    }
                 }
                 else
                 {
-                    infoLabel.ForeColor = Color.Red;
-                    infoLabel.Font = new Font(infoLabel.Font.FontFamily, 13);
-                }
+                    if (quantatyOfChekedPlants > 0)
+                    {
+                        button.FlatAppearance.BorderSize = 0;
+                        quantatyOfChekedPlants--;
+                        infoLabel.ForeColor = Color.Black;
+                        infoLabel.Font = new Font(infoLabel.Font.FontFamily, 10);
+                    }
+                    else
+                    {
+                        //TODO
+                    }
+                }   
             }
-            else
-            {
-                if (quantatyOfChekedPlants > 0)
-                {
-                    button.FlatAppearance.BorderSize = 0;
-                    quantatyOfChekedPlants--;
-                    infoLabel.ForeColor = Color.Black;
-                    infoLabel.Font = new Font(infoLabel.Font.FontFamily, 10);
-                }
-                else
-                {
-                    //TODO
-                }
-            }   
-        }
     }
 }

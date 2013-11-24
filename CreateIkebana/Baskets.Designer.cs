@@ -360,7 +360,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 383);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(255)))), ((int)(((byte)(199)))));
+            this.ClientSize = new System.Drawing.Size(583, 384);
             this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.flb12);
             this.Controls.Add(this.flb11);
@@ -388,9 +389,11 @@
             this.Controls.Add(this.fbtn7);
             this.Controls.Add(this.fbtn5);
             this.Controls.Add(this.fbtn1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximumSize = new System.Drawing.Size(599, 422);
             this.MinimumSize = new System.Drawing.Size(599, 422);
             this.Name = "Baskets";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Baskets";
             this.ResumeLayout(false);
             this.PerformLayout();

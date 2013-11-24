@@ -201,7 +201,7 @@
             this.pbtn11.Size = new System.Drawing.Size(75, 67);
             this.pbtn11.TabIndex = 45;
             this.pbtn11.UseVisualStyleBackColor = true;
-            this.pbtn11.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn11.Click += new System.EventHandler(this.pbtn11_Click);
             // 
             // pbtn12
             // 
@@ -214,7 +214,7 @@
             this.pbtn12.Size = new System.Drawing.Size(75, 67);
             this.pbtn12.TabIndex = 44;
             this.pbtn12.UseVisualStyleBackColor = true;
-            this.pbtn12.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn12.Click += new System.EventHandler(this.pbtn12_Click);
             // 
             // pbtn8
             // 
@@ -227,7 +227,7 @@
             this.pbtn8.Size = new System.Drawing.Size(75, 67);
             this.pbtn8.TabIndex = 43;
             this.pbtn8.UseVisualStyleBackColor = true;
-            this.pbtn8.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn8.Click += new System.EventHandler(this.pbtn8_Click);
             // 
             // pbtn4
             // 
@@ -240,7 +240,7 @@
             this.pbtn4.Size = new System.Drawing.Size(75, 67);
             this.pbtn4.TabIndex = 42;
             this.pbtn4.UseVisualStyleBackColor = true;
-            this.pbtn4.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn4.Click += new System.EventHandler(this.pbtn4_Click);
             // 
             // pbtn10
             // 
@@ -253,7 +253,7 @@
             this.pbtn10.Size = new System.Drawing.Size(75, 67);
             this.pbtn10.TabIndex = 41;
             this.pbtn10.UseVisualStyleBackColor = true;
-            this.pbtn10.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn10.Click += new System.EventHandler(this.pbtn10_Click);
             // 
             // pbtn6
             // 
@@ -266,7 +266,7 @@
             this.pbtn6.Size = new System.Drawing.Size(75, 67);
             this.pbtn6.TabIndex = 40;
             this.pbtn6.UseVisualStyleBackColor = true;
-            this.pbtn6.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn6.Click += new System.EventHandler(this.pbtn6_Click);
             // 
             // pbtn2
             // 
@@ -279,7 +279,7 @@
             this.pbtn2.Size = new System.Drawing.Size(75, 67);
             this.pbtn2.TabIndex = 39;
             this.pbtn2.UseVisualStyleBackColor = true;
-            this.pbtn2.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn2.Click += new System.EventHandler(this.pbtn2_Click);
             // 
             // pbtn3
             // 
@@ -292,7 +292,7 @@
             this.pbtn3.Size = new System.Drawing.Size(75, 67);
             this.pbtn3.TabIndex = 38;
             this.pbtn3.UseVisualStyleBackColor = true;
-            this.pbtn3.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn3.Click += new System.EventHandler(this.pbtn3_Click);
             // 
             // pbtn9
             // 
@@ -305,7 +305,7 @@
             this.pbtn9.Size = new System.Drawing.Size(75, 67);
             this.pbtn9.TabIndex = 37;
             this.pbtn9.UseVisualStyleBackColor = true;
-            this.pbtn9.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn9.Click += new System.EventHandler(this.pbtn9_Click);
             // 
             // pbtn7
             // 
@@ -318,7 +318,7 @@
             this.pbtn7.Size = new System.Drawing.Size(75, 67);
             this.pbtn7.TabIndex = 36;
             this.pbtn7.UseVisualStyleBackColor = true;
-            this.pbtn7.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn7.Click += new System.EventHandler(this.pbtn7_Click);
             // 
             // pbtn5
             // 
@@ -331,7 +331,7 @@
             this.pbtn5.Size = new System.Drawing.Size(75, 67);
             this.pbtn5.TabIndex = 35;
             this.pbtn5.UseVisualStyleBackColor = true;
-            this.pbtn5.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn5.Click += new System.EventHandler(this.pbtn5_Click);
             // 
             // pbtn1
             // 
@@ -344,7 +344,7 @@
             this.pbtn1.Size = new System.Drawing.Size(75, 67);
             this.pbtn1.TabIndex = 34;
             this.pbtn1.UseVisualStyleBackColor = true;
-            this.pbtn1.Click += new System.EventHandler(this.colorChanger_Click);
+            this.pbtn1.Click += new System.EventHandler(this.pbtn1_Click);
             // 
             // infoLabel
             // 
@@ -360,7 +360,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 383);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(255)))), ((int)(((byte)(199)))));
+            this.ClientSize = new System.Drawing.Size(583, 384);
             this.Controls.Add(this.infoLabel);
             this.Controls.Add(this.plb12);
             this.Controls.Add(this.plb11);
@@ -388,9 +389,11 @@
             this.Controls.Add(this.pbtn7);
             this.Controls.Add(this.pbtn5);
             this.Controls.Add(this.pbtn1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximumSize = new System.Drawing.Size(599, 422);
             this.MinimumSize = new System.Drawing.Size(599, 422);
             this.Name = "Plants";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Plants";
             this.ResumeLayout(false);
             this.PerformLayout();
