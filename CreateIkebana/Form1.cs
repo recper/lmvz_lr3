@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 
 namespace CreateIkebana
 {
@@ -17,8 +18,11 @@ namespace CreateIkebana
         Baskets baskets = new Baskets();
         ShowIkebanas ikebanas = new ShowIkebanas();
 
-        bool tips = true;
-        
+        bool tip1 = true;
+        bool tip2 = false;
+        bool tip3 = false;
+        bool tip4 = false;
+    
 
         public Form1()
         {
@@ -33,14 +37,26 @@ namespace CreateIkebana
         {
             flo.ShowDialog();
             h1lplab1.Visible = false;
-            helplab2.Visible = tips;
+            helplab3.Visible = false;
+            helplab4.Visible = false;
+            helplab2.Visible = true;
+            tip1 = false;
+            tip2 = true;
+     
+
         }
 
         private void btnPlants_Click(object sender, EventArgs e)
         {
             plants.ShowDialog();
             helplab2.Visible = false;
-            helplab3.Visible = tips;
+            h1lplab1.Visible = false;
+            helplab4.Visible = false;
+            helplab3.Visible = true;
+            tip2 = false;
+            tip3 = true;
+ 
+            
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -91,18 +107,35 @@ namespace CreateIkebana
         {
             baskets.ShowDialog();
             helplab3.Visible = false;
-            helplab4.Visible = tips;
+            h1lplab1.Visible = false;
+            helplab2.Visible = false;
+            helplab4.Visible = true;
+            tip3 = false;
+            tip4 = true;
+
         }
 
         private void aboutPrToolStripMenuItem_Click(object sender, EventArgs e)
         {
-    //        helpProvider1.SetHelpString(Control F1, string 
+            try
+			{
+				Process SysInfo = new Process();
+				SysInfo.StartInfo.ErrorDialog = true;
+                SysInfo.StartInfo.FileName = "HELP.HLP";
+				SysInfo.Start();
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show (ex.Message);
+			}
         }
 
         private void mbtnRestart_Click(object sender, EventArgs e)
         {
-            
             h1lplab1.Visible = true;
+            helplab2.Visible = false;
+            helplab3.Visible = false;
+
             //flowers
             flo.btnNo_Click(sender,e);
             plants.pbtnNo_Click(sender, e);
@@ -128,14 +161,23 @@ namespace CreateIkebana
 
         private void убрToolStripMenuItem_Click(object sender, EventArgs e)
         {
-             tips = false;
+             
              h1lplab1.Visible = false;
+             helplab2.Visible = false;
+             helplab3.Visible = false;
+             helplab4.Visible = false;
+
         }
 
         private void createTipsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-             tips = true;
+
+            h1lplab1.Visible = tip1;
+            helplab2.Visible = tip2;
+            helplab3.Visible = tip3;
+      //    helplab4.Visible = tip4;
         }
+
 
     }
 }

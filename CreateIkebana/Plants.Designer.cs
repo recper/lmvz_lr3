@@ -349,10 +349,12 @@
             // infoLabel
             // 
             this.infoLabel.AutoSize = true;
-            this.infoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.infoLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(255)))), ((int)(((byte)(199)))));
+            this.infoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.infoLabel.ForeColor = System.Drawing.Color.DarkGreen;
             this.infoLabel.Location = new System.Drawing.Point(224, 9);
             this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Size = new System.Drawing.Size(114, 17);
+            this.infoLabel.Size = new System.Drawing.Size(130, 17);
             this.infoLabel.TabIndex = 60;
             this.infoLabel.Text = "Choose 3 plants.";
             // 

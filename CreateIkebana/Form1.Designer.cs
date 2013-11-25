@@ -33,13 +33,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.убрToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createTipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutPrToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.btnFlowers = new System.Windows.Forms.Button();
@@ -66,10 +64,10 @@
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.mbtn8 = new System.Windows.Forms.Button();
             this.mbtn9 = new System.Windows.Forms.Button();
-            this.mlb7 = new System.Windows.Forms.Label();
             this.mlb8 = new System.Windows.Forms.Label();
-            this.mlb9 = new System.Windows.Forms.Label();
             this.mbtn7 = new System.Windows.Forms.Button();
+            this.mlb7 = new System.Windows.Forms.Label();
+            this.mlb9 = new System.Windows.Forms.Label();
             this.helpProvider1 = new System.Windows.Forms.HelpProvider();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.newToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,8 +76,6 @@
             this.helplab2 = new System.Windows.Forms.Label();
             this.helplab3 = new System.Windows.Forms.Label();
             this.helplab4 = new System.Windows.Forms.Label();
-            this.убрToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.createTipsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -92,7 +88,6 @@
             this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
             this.helpToolStripMenuItem,
             this.helpToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -105,8 +100,6 @@
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
-            this.openToolStripMenuItem,
-            this.saveToolStripMenuItem,
             this.toolStripMenuItem2,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -120,18 +113,6 @@
             this.newToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
             this.newToolStripMenuItem.Text = "&New";
             this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
-            // 
-            // openToolStripMenuItem
-            // 
-            this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.openToolStripMenuItem.Text = "&Open";
-            // 
-            // saveToolStripMenuItem
-            // 
-            this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.saveToolStripMenuItem.Text = "&Save";
             // 
             // toolStripMenuItem2
             // 
@@ -147,21 +128,6 @@
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // editToolStripMenuItem
-            // 
-            this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.deleteToolStripMenuItem});
-            this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem.Text = "&Edit";
-            // 
-            // deleteToolStripMenuItem
-            // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -170,6 +136,20 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
             this.helpToolStripMenuItem.Text = "Setting";
+            // 
+            // убрToolStripMenuItem
+            // 
+            this.убрToolStripMenuItem.Name = "убрToolStripMenuItem";
+            this.убрToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.убрToolStripMenuItem.Text = "Delete tips";
+            this.убрToolStripMenuItem.Click += new System.EventHandler(this.убрToolStripMenuItem_Click);
+            // 
+            // createTipsToolStripMenuItem
+            // 
+            this.createTipsToolStripMenuItem.Name = "createTipsToolStripMenuItem";
+            this.createTipsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.createTipsToolStripMenuItem.Text = "Create tips";
+            this.createTipsToolStripMenuItem.Click += new System.EventHandler(this.createTipsToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem1
             // 
@@ -182,8 +162,8 @@
             // aboutPrToolStripMenuItem
             // 
             this.aboutPrToolStripMenuItem.Name = "aboutPrToolStripMenuItem";
-            this.aboutPrToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
-            this.aboutPrToolStripMenuItem.Text = "About Program";
+            this.aboutPrToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.aboutPrToolStripMenuItem.Text = "About Program F1";
             this.aboutPrToolStripMenuItem.Click += new System.EventHandler(this.aboutPrToolStripMenuItem_Click);
             // 
             // btnFlowers
@@ -206,7 +186,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.00662F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.99338F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 97F));
             this.tableLayoutPanel1.Controls.Add(this.mlb1, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.mbtn1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.mbtn2, 1, 0);
@@ -227,7 +207,7 @@
             this.mlb1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mlb1.Location = new System.Drawing.Point(3, 56);
             this.mlb1.Name = "mlb1";
-            this.mlb1.Size = new System.Drawing.Size(55, 22);
+            this.mlb1.Size = new System.Drawing.Size(54, 22);
             this.mlb1.TabIndex = 0;
             this.mlb1.Visible = false;
             // 
@@ -235,23 +215,23 @@
             // 
             this.mbtn1.Location = new System.Drawing.Point(3, 3);
             this.mbtn1.Name = "mbtn1";
-            this.mbtn1.Size = new System.Drawing.Size(55, 50);
+            this.mbtn1.Size = new System.Drawing.Size(54, 50);
             this.mbtn1.TabIndex = 1;
             this.mbtn1.UseVisualStyleBackColor = true;
             this.mbtn1.Visible = false;
             // 
             // mbtn2
             // 
-            this.mbtn2.Location = new System.Drawing.Point(64, 3);
+            this.mbtn2.Location = new System.Drawing.Point(63, 3);
             this.mbtn2.Name = "mbtn2";
-            this.mbtn2.Size = new System.Drawing.Size(58, 50);
+            this.mbtn2.Size = new System.Drawing.Size(57, 50);
             this.mbtn2.TabIndex = 2;
             this.mbtn2.UseVisualStyleBackColor = true;
             this.mbtn2.Visible = false;
             // 
             // mbtn3
             // 
-            this.mbtn3.Location = new System.Drawing.Point(128, 3);
+            this.mbtn3.Location = new System.Drawing.Point(126, 3);
             this.mbtn3.Name = "mbtn3";
             this.mbtn3.Size = new System.Drawing.Size(73, 50);
             this.mbtn3.TabIndex = 3;
@@ -261,7 +241,7 @@
             // mlb3
             // 
             this.mlb3.AutoSize = true;
-            this.mlb3.Location = new System.Drawing.Point(128, 56);
+            this.mlb3.Location = new System.Drawing.Point(126, 56);
             this.mlb3.Name = "mlb3";
             this.mlb3.Size = new System.Drawing.Size(0, 13);
             this.mlb3.TabIndex = 5;
@@ -271,9 +251,9 @@
             // 
             this.mlb2.AutoSize = true;
             this.mlb2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mlb2.Location = new System.Drawing.Point(64, 56);
+            this.mlb2.Location = new System.Drawing.Point(63, 56);
             this.mlb2.Name = "mlb2";
-            this.mlb2.Size = new System.Drawing.Size(58, 22);
+            this.mlb2.Size = new System.Drawing.Size(57, 22);
             this.mlb2.TabIndex = 4;
             this.mlb2.Visible = false;
             // 
@@ -295,7 +275,7 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.14815F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.85185F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel2.Controls.Add(this.mbtn4, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.mbtn5, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.mbtn6, 2, 0);
@@ -314,23 +294,23 @@
             // 
             this.mbtn4.Location = new System.Drawing.Point(3, 3);
             this.mbtn4.Name = "mbtn4";
-            this.mbtn4.Size = new System.Drawing.Size(54, 50);
+            this.mbtn4.Size = new System.Drawing.Size(53, 50);
             this.mbtn4.TabIndex = 0;
             this.mbtn4.UseVisualStyleBackColor = true;
             this.mbtn4.Visible = false;
             // 
             // mbtn5
             // 
-            this.mbtn5.Location = new System.Drawing.Point(63, 3);
+            this.mbtn5.Location = new System.Drawing.Point(62, 3);
             this.mbtn5.Name = "mbtn5";
-            this.mbtn5.Size = new System.Drawing.Size(58, 50);
+            this.mbtn5.Size = new System.Drawing.Size(57, 50);
             this.mbtn5.TabIndex = 1;
             this.mbtn5.UseVisualStyleBackColor = true;
             this.mbtn5.Visible = false;
             // 
             // mbtn6
             // 
-            this.mbtn6.Location = new System.Drawing.Point(127, 3);
+            this.mbtn6.Location = new System.Drawing.Point(125, 3);
             this.mbtn6.Name = "mbtn6";
             this.mbtn6.Size = new System.Drawing.Size(71, 50);
             this.mbtn6.TabIndex = 2;
@@ -340,7 +320,7 @@
             // mlb5
             // 
             this.mlb5.AutoSize = true;
-            this.mlb5.Location = new System.Drawing.Point(63, 56);
+            this.mlb5.Location = new System.Drawing.Point(62, 56);
             this.mlb5.Name = "mlb5";
             this.mlb5.Size = new System.Drawing.Size(0, 13);
             this.mlb5.TabIndex = 4;
@@ -349,7 +329,7 @@
             // mlb6
             // 
             this.mlb6.AutoSize = true;
-            this.mlb6.Location = new System.Drawing.Point(127, 56);
+            this.mlb6.Location = new System.Drawing.Point(125, 56);
             this.mlb6.Name = "mlb6";
             this.mlb6.Size = new System.Drawing.Size(0, 13);
             this.mlb6.TabIndex = 5;
@@ -430,7 +410,7 @@
             this.tableLayoutPanel3.ColumnCount = 3;
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 48.14815F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 51.85185F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 95F));
             this.tableLayoutPanel3.Controls.Add(this.mbtn8, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.mbtn9, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.mlb8, 1, 1);
@@ -447,21 +427,39 @@
             // 
             // mbtn8
             // 
-            this.mbtn8.Location = new System.Drawing.Point(63, 3);
+            this.mbtn8.Location = new System.Drawing.Point(62, 3);
             this.mbtn8.Name = "mbtn8";
-            this.mbtn8.Size = new System.Drawing.Size(58, 50);
+            this.mbtn8.Size = new System.Drawing.Size(57, 50);
             this.mbtn8.TabIndex = 1;
             this.mbtn8.UseVisualStyleBackColor = true;
             this.mbtn8.Visible = false;
             // 
             // mbtn9
             // 
-            this.mbtn9.Location = new System.Drawing.Point(127, 3);
+            this.mbtn9.Location = new System.Drawing.Point(125, 3);
             this.mbtn9.Name = "mbtn9";
             this.mbtn9.Size = new System.Drawing.Size(71, 50);
             this.mbtn9.TabIndex = 2;
             this.mbtn9.UseVisualStyleBackColor = true;
             this.mbtn9.Visible = false;
+            // 
+            // mlb8
+            // 
+            this.mlb8.AutoSize = true;
+            this.mlb8.Location = new System.Drawing.Point(62, 56);
+            this.mlb8.Name = "mlb8";
+            this.mlb8.Size = new System.Drawing.Size(0, 13);
+            this.mlb8.TabIndex = 5;
+            this.mlb8.Visible = false;
+            // 
+            // mbtn7
+            // 
+            this.mbtn7.Location = new System.Drawing.Point(3, 3);
+            this.mbtn7.Name = "mbtn7";
+            this.mbtn7.Size = new System.Drawing.Size(53, 50);
+            this.mbtn7.TabIndex = 0;
+            this.mbtn7.UseVisualStyleBackColor = true;
+            this.mbtn7.Visible = false;
             // 
             // mlb7
             // 
@@ -472,32 +470,14 @@
             this.mlb7.TabIndex = 4;
             this.mlb7.Visible = false;
             // 
-            // mlb8
-            // 
-            this.mlb8.AutoSize = true;
-            this.mlb8.Location = new System.Drawing.Point(63, 56);
-            this.mlb8.Name = "mlb8";
-            this.mlb8.Size = new System.Drawing.Size(0, 13);
-            this.mlb8.TabIndex = 5;
-            this.mlb8.Visible = false;
-            // 
             // mlb9
             // 
             this.mlb9.AutoSize = true;
-            this.mlb9.Location = new System.Drawing.Point(127, 56);
+            this.mlb9.Location = new System.Drawing.Point(125, 56);
             this.mlb9.Name = "mlb9";
             this.mlb9.Size = new System.Drawing.Size(0, 13);
             this.mlb9.TabIndex = 3;
             this.mlb9.Visible = false;
-            // 
-            // mbtn7
-            // 
-            this.mbtn7.Location = new System.Drawing.Point(3, 3);
-            this.mbtn7.Name = "mbtn7";
-            this.mbtn7.Size = new System.Drawing.Size(54, 50);
-            this.mbtn7.TabIndex = 0;
-            this.mbtn7.UseVisualStyleBackColor = true;
-            this.mbtn7.Visible = false;
             // 
             // helpProvider1
             // 
@@ -572,20 +552,6 @@
             this.helplab4.Text = "CLICK TO CREATE IKEBANA";
             this.helplab4.Visible = false;
             // 
-            // убрToolStripMenuItem
-            // 
-            this.убрToolStripMenuItem.Name = "убрToolStripMenuItem";
-            this.убрToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.убрToolStripMenuItem.Text = "Delete tips";
-            this.убрToolStripMenuItem.Click += new System.EventHandler(this.убрToolStripMenuItem_Click);
-            // 
-            // createTipsToolStripMenuItem
-            // 
-            this.createTipsToolStripMenuItem.Name = "createTipsToolStripMenuItem";
-            this.createTipsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.createTipsToolStripMenuItem.Text = "Create tips";
-            this.createTipsToolStripMenuItem.Click += new System.EventHandler(this.createTipsToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -637,7 +603,6 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem1;
         private System.Windows.Forms.Button btnFlowers;
@@ -657,8 +622,6 @@
         public System.Windows.Forms.Label mlb6;
         public System.Windows.Forms.Label mlb4;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Button mbtnCreate;
@@ -675,7 +638,6 @@
         public System.Windows.Forms.Button mbtn7;
         private System.Windows.Forms.HelpProvider helpProvider1;
         private System.Windows.Forms.ToolStripMenuItem aboutPrToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;

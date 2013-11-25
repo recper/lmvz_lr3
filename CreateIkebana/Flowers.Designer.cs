@@ -349,10 +349,11 @@
             // infoLabel
             // 
             this.infoLabel.AutoSize = true;
-            this.infoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.infoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.infoLabel.ForeColor = System.Drawing.Color.DarkGreen;
             this.infoLabel.Location = new System.Drawing.Point(227, 9);
             this.infoLabel.Name = "infoLabel";
-            this.infoLabel.Size = new System.Drawing.Size(118, 17);
+            this.infoLabel.Size = new System.Drawing.Size(135, 17);
             this.infoLabel.TabIndex = 34;
             this.infoLabel.Text = "Choose 3 flovers.";
             // 
@@ -389,6 +390,8 @@
             this.Controls.Add(this.fbtn7);
             this.Controls.Add(this.fbtn5);
             this.Controls.Add(this.fbtn1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximumSize = new System.Drawing.Size(599, 422);
             this.MinimumSize = new System.Drawing.Size(599, 422);
